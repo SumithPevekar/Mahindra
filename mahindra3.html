@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Remove Teacher</title>
+<style>
+
+           body{
+                margin: 0;
+                padding: 0;
+                background: url(https://pre-employment.com/wp-content/uploads/2017/04/category_Background-Screening.jpg) no-repeat;
+                background-size: cover;
+               
+                font-family: sans-serif;
+               
+            }
+
+           .remarks{
+                width: 270px;
+                padding: 10px;
+                position: absolute;
+                top: 65%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+                text-align: center;
+            }
+.AB input[type="text"]{
+               background: black;
+               border: 0;
+               
+               margin: 20px auto;
+               text-align: center;
+               border: 2px solid #006666;
+               padding: 14px 10px;
+               width: 200px;
+               outline: none;
+               color:white;
+               
+               transition: 0.25s;
+               font-family: 'Raleway', sans-serif;
+
+           }  
+                      .AB input[type="text"]:hover{
+               width: 280px;
+               border-color: #009933;
+
+           }    
+                     
+           .AB input[type="submit" ]:hover{
+               background: #009900;
+               
+           }
+           .button[type="submit" ]:hover{
+               background: #009900;
+               
+   
+}
+           .button input[type="submit"]{
+               border: 0;
+               background: none;
+               margin: 20px auto;
+               text-align: center;
+               border: 2px solid #006666;
+               padding: 14px 40px;
+               
+               outline: none;
+               color: white;
+               border-radius: 24px;
+               transition: 0.25s;
+               cursor: pointer;
+               font-family: 'Raleway', sans-serif;
+
+           }
+                          .button[type="submit" ]:hover{
+               background: #009900;
+               
+   
+}
+        </style>
+</head>
+<body>
+      <div class="remarks">
+<form action="GetTeacherReport" method="post">
+           
+         <div class="AB">   <input type="text" name="object" placeholder="Faculty Name" /></div>
+           
+            <div class="button"><input type="submit" value="Remove"/></div>
+        </form>
+        </div>
+
+</body>
+</html>

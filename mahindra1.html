@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+
+<head>
+<title>Login</title>
+
+
+ 
+    <head>
+ 
+   
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+              background: url(http://kungalooshradio.com/wp-content/plugins/admin-custom-login/images/3d-background.jpg);
+              background-size: cover;  
+              font-family: 'Roboto', sans-serif;
+
+              background-repeat: no-repeat;
+
+            }
+         
+       
+            .login {
+             width: 350px;
+             padding: 10px;
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%,-50%);
+             background: rgba(0,0,0,.8);
+                 
+             text-align: center;
+             border-radius: 50px;
+             border: 5px solid #006666;
+           }
+           .avatar{
+               width: 75px;
+               background: #006666;
+                 position: absolute;
+                 top: -10%;
+               left: 41%;
+               border-radius: 50px;
+   
+               
+           }
+           h1{
+               color: white;
+               text-transform: uppercase;
+               font-weight: 400;
+               padding-top: 30px;
+                          }
+                         
+           .login input[type="text"],.login input[type="password"],.login input[type="password"]{
+               border: 0;
+               background: none;
+               margin: 20px auto;
+               text-align: center;
+               border: 2px solid #006666;
+               padding: 14px 10px;
+               width: 200px;
+               outline: none;
+               color: white;
+               border-radius: 24px;
+               transition: 0.25s;
+               font-family: 'Raleway', sans-serif;
+
+           }
+           .login input[type="text"]:hover,.login input[type="password"]:hover ,.login input[type="[password]"]:hover {
+               width: 280px;
+               border-color: #009933;
+
+           }
+           .login input[type="submit"]{
+               border: 0;
+               background: none;
+               margin: 20px auto;
+               text-align: center;
+               border: 2px solid #006666;
+               padding: 14px 40px;
+               
+               outline: none;
+               color: white;
+               border-radius: 24px;
+               transition: 0.25s;
+               cursor: pointer;
+               font-family: 'Raleway', sans-serif;
+
+           }
+           
+           
+           
+           .login input[type="submit" ]:hover{
+               background: #009900;
+               
+           }
+           
+        </style>
+ 
+    </head>
+    <body>
+   <div class="login">
+       <img src="https://www.juptr.io/images/default-user.png" class="avatar">
+        <form action="login" method="post">
+           
+     
+               
+                 <h1>Login</h1>
+                 
+                   
+                     <input type="text" name="uname" placeholder="Username" />
+   
+                 
+
+                     <input type="password" name="psw"  placeholder="Password"/>
+               
+           
+                <input type="submit" value="Sign In  >>>" />
+           
+        </form>
+   </div>
+    </body>
+</html>

@@ -1,0 +1,198 @@
+<html>
+    <head>
+        <title>Add Teacher</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background: url(https://www.divinity.cam.ac.uk/images/large-carousel-images/graduate-seminar.png/@@images/56cc2dcd-2000-4604-9c1f-3e975a371e4a.png) no-repeat;
+                background-size: cover;
+               
+                font-family: sans-serif;
+               
+            }
+            .remarks{
+                width: 270px;
+                padding: 10px;
+                position: absolute;
+                top: 65%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+                text-align: center;
+            }
+            h1{
+                border-bottom: solid #00cc00;
+                text-transform: uppercase;
+            }
+
+            ul{
+
+                margin-top:10px;
+                padding: 0px;
+                list-style: none;              
+                color: black;
+                text-align: center;
+                text-decoration: none;
+               
+            }
+            ul li {
+               margin: 2px;
+             color: black;
+             width: 180px;
+             line-height: 40px;
+             border-bottom: 1px solid #00ff00;
+                font-size: 20px;
+            cursor: pointer;
+            float: left;
+            }
+            ul li ul li{
+             
+                background: rgba(0,0,0,.9);
+            line-height: 40px;
+           display: none;
+           
+           
+            }
+           
+            ul li a{
+                color: white;
+                background: transparent;
+
+                margin: 2px;
+                display: block;
+               text-decoration: none;
+            }
+            ul li a:hover{
+                background: #00ff00;
+            }
+            ul li:hover ul li{
+                display: block;
+            }
+input
+{
+    height: 50px;
+    text-align:center;
+}
+
+
+               .button[type="submit" ]:hover{
+               background: #009900;
+               
+   
+}
+           .button input[type="submit"]{
+               border: 0;
+               background: none;
+               margin: 20px auto;
+               text-align: center;
+               border: 2px solid #006666;
+               padding: 14px 40px;
+               
+               outline: none;
+               color: white;
+               border-radius: 24px;
+               transition: 0.25s;
+               cursor: pointer;
+               font-family: 'Raleway', sans-serif;
+
+           }
+           .AB input[type="text"]{
+               background: black;
+               border: 0;
+               
+               margin: 20px auto;
+               text-align: center;
+               border: 2px solid #006666;
+               padding: 14px 10px;
+               width: 200px;
+               outline: none;
+               color:white;
+               
+               transition: 0.25s;
+               font-family: 'Raleway', sans-serif;
+
+           }  
+                      .AB input[type="text"]:hover{
+               width: 280px;
+               border-color: #009933;
+
+           }    
+                     
+           .AB input[type="submit" ]:hover{
+               background: #009900;
+               
+           }
+        </style>
+   
+       
+    </head>
+    <body><div class="AB">
+        <ul>
+            <li><a>Dept.</a>
+                <ul>
+                    <li>
+                        <a>INFT</a>
+                    </li>
+                                        <li>
+                        <a>CMPN</a>
+                    </li>
+                                        <li>
+                        <a>ETRX</a>
+                    </li>
+                                        <li>
+                        <a>EXTC</a>
+                    </li>
+                                        <li>
+                        <a>BIOM</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a>Year</a>
+                <ul>
+                    <li><a>FE</a></li>
+                    <li><a>SE</a></li>
+                    <li><a>TE</a></li>
+                    <li><a>BE</a></li>
+                </ul>
+                  </li>
+                  <li><a>Division</a>
+                    <ul>
+                        <li>
+                           <a> A</a>
+                        </li>
+                        <li>
+                            <a>B</a>
+                        </li>
+                        <li>
+                           <a> C</a>
+                        </li>
+                    </ul></li>
+                </ul>
+       
+   
+   
+<ul>
+            <li><a>Subject</a>
+                <ul>
+                    <li><a>DS</a></li>
+                    <li><a>ECCF</a></li>
+                    <li><a>DLDA</a></li>
+                    <li><a>AM3</a></li>
+                    <li><a>DM</a></li>
+                    <li><a>OOPM</a></li>
+
+                </ul>
+              </li>
+          </ul>
+   
+       <div class="remarks">
+<form action="GetTeacherReport" method="post">
+           
+         <div class="AB">   <input type="text" name="object" placeholder="Faculty Name" /></div>
+           
+            <div class="button"><input type="submit" value="ADD"/></div>
+        </form>
+        </div>
+    </body>
+</html>
